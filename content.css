@@ -1,0 +1,557 @@
+.pp{
+    width: 8em;
+}
+
+.nom{
+    float:left;
+}
+
+.type{
+    width: 9%;
+    position: absolute;
+    z-index: 4;
+    padding-left: 56.19%;
+    padding-top: 41.43%;
+}
+
+.type2{
+    width: 9%;
+    position: absolute;
+    z-index: 4;
+    padding-left: 67.45%;
+    padding-top: 41.43%;
+}
+
+.image{
+    position:absolute;
+    z-index: 4;
+    padding-top: 17.4%;
+    padding-left: 27.86%;
+    width: 11.5%;
+}
+
+.stats{
+    position:absolute;
+    z-index: 4;
+    padding-left: 54.2%;
+    padding-top: 25.8%;
+    width: 24.5%;
+    height:26%;
+}
+
+.pokedex{
+    position:absolute;
+    z-index: 3;
+    width: 65%;
+    padding-left: 16.6%;
+    padding-top: 1.6%;
+}
+
+p{
+    position:absolute;
+    z-index: 4;
+    font-size: 152%;
+    color: white;
+    padding-left: 56.35%;
+    padding-top: 16%;
+    
+}
+
+.fond_ecran{
+    position:absolute;
+    z-index: 2;
+    width:20.5%;
+    padding-left: 23.4%;
+    padding-top: 15.7%;
+}
+
+table{
+    margin:auto;
+}
+table span {
+   
+    font-weight: bold;
+    
+}
+
+#salameche{
+    width: 10%;
+    padding-left: 29%;
+}
+
+#reptincel{
+    width: 10%;
+    padding-left: 28.5%;
+}
+
+#dracaufeu{
+    width: 14%;
+    padding-top: 18%;
+}
+
+#carapuce{
+    width: 10.5%;
+    padding-top: 17%;
+}
+
+#tortank{
+    width: 10.5%;
+    padding-top: 17%;
+}
+
+#chrysacier{
+    width: 9%;
+    padding-top: 18%;
+    padding-left: 29%;
+}
+
+#aspicot{
+    width: 7%;
+    padding-top: 18%;
+}
+
+#coconfort {
+    width: 5%;
+    padding-top: 18%;
+    padding-left: 31%
+}
+
+#dardargnan{
+    width: 9%;
+    padding-top: 18%;
+}
+
+#roucool{
+    width: 10%;
+    padding-top: 18%;
+    padding-left: 29%;
+}
+
+#roucoups{
+    width: 10.5%;
+    padding-top: 16%;
+}
+
+#roucarnage{
+    width: 10%;
+    padding-top: 16%;
+}
+
+#arbok{
+    width: 10%;
+    padding-top: 17.7%;
+}
+
+#sabelette{
+    width: 9%;
+    padding-left: 29%;
+}
+
+#nidorina{
+    width: 10%;
+    padding-top: 17.7%;
+}
+
+#nidoran{
+    width: 9%;
+    padding-top: 17.7%;
+}
+
+#nidorino{
+    width: 10%;
+    padding-top: 17.7%;
+}
+
+#nidoking{
+    width: 12%;
+    padding-top: 18.7%;
+}
+
+#grosdoudou{
+    width: 8%;
+    padding-top: 17.7%;
+}
+
+#mystherbe {
+    width: 9%;
+    padding-top: 17.7%;
+    padding-left: 30%;
+}
+
+#mimitoss{
+    width: 9%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#miaouss{
+    width: 8%;
+    padding-top: 17.7%;
+}
+
+#psykokwak{
+    width: 8%;
+    padding-top: 17.7%;
+}
+
+#colossinge{
+    width: 10%;
+    padding-top: 17.7%;
+}
+
+#caninos{
+    width: 7%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#kadabra{
+    width: 9.5%;
+    padding-top: 17.7%;
+}
+
+#machoc{
+    width: 9%;
+    padding-top: 17.7%;
+}
+
+#machopeur{
+    width: 9%;
+    padding-top: 17.7%;
+    padding-left: 29%
+}
+
+#mackogneur{
+    width: 10%;
+    padding-top: 16.7%;
+}
+
+#chetiflor{
+    width: 8%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#racaillou{
+    width: 12%;
+    padding-top: 21.7%;
+}
+
+#gravalanche{
+    width: 13%;
+    padding-top: 20.7%;
+    padding-left: 27%
+}
+
+#ponyta{
+    width: 8.5%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#galopa{
+    width: 10%;
+    padding-top: 17%;
+}
+
+#flagadoss{
+    width: 10%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#canarticho{
+    width: 8%;
+    padding-top: 18.7%;
+}
+
+#doduo{
+    width: 7%;
+    padding-top: 17%;
+}
+
+#dodrio{
+    width: 9%;
+    padding-top: 17.7%;
+}
+
+#grotadmorv{
+    width: 15%;
+    padding-top: 20.5%;
+}
+
+#onix{
+    width: 10%;
+    padding-top: 17.7%;
+}
+
+#soporifik{
+    width: 8%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#hypnomade{
+    width: 9.5%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#osselait{
+    width: 7%;
+    padding-top: 19.7%;
+    padding-left: 29%;
+}
+
+#ossatueur{
+    width: 9%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#tygnon{
+    width: 8%;
+    padding-top: 17.7%;
+}
+
+#hypotrempe{
+    width: 8.5%;
+    padding-top: 17.7%;
+    padding-left: 30%;
+}
+
+#stary{
+    width: 9.5%;
+    padding-top: 17.7%;
+}
+
+#insecateur{
+    width: 10%;
+    padding-top: 17.7%;
+}
+
+#scarabrute{
+    width: 11%;
+    padding-top: 16.7%;
+}
+
+#magicarpe{
+    width: 9.5%;
+    padding-top: 17.7%;
+    padding-left: 29%;
+}
+
+#leviator{
+    width: 10%;
+    padding-top: 16.7%;
+}
+
+#evoli{
+    width: 9%;
+    padding-top: 16.7%;
+}
+
+#aquali{
+    width: 9.5%;
+    padding-top: 16.7%;
+}
+
+#voltali{
+    width: 10%;
+    padding-top: 16.7%;
+    padding-left: 28%;
+}
+
+#porigon{
+    width: 10%;
+    padding-top: 17.7%;
+}
+
+#amonita{
+    width: 9%;
+    padding-top: 17.7%;
+}
+
+#kabuto{
+    width: 8%;
+    padding-top:21.7%;
+    padding-left: 29%
+}
+
+#kabutops{
+    width: 10%;
+    padding-top: 16.7%;
+}
+
+#articodin{
+    width: 10.5%;
+    padding-top: 16.7%;
+    padding-left: 29%
+}
+
+#draco{
+    width: 10%;
+    padding-top: 16.7%;
+}
+
+#dracolosse{
+    width: 9.6%;
+    padding-top: 16.7%;
+    padding-left: 28.5%
+}
+
+@font-face {
+    font-family: pokemonfont;
+    src: url("decoration/Pokemon_Hollow.ttf");
+}
+
+#searchbar{
+    margin-left: 1%;
+    padding:15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10%;
+    
+  }
+
+  input[type=text] {
+    width: 30%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+ }
+
+ input[type=text]:focus {
+    width: 40%;
+}
+
+#list{
+    font-size:  1.5em;
+    margin-left: 90px;
+   }
+
+.nom{
+    display: list-item;    
+} 
+
+h1{
+    position: absolute;
+    left:44.75%;
+    bottom:52%;
+    font-family:pokemonfont;
+    font-size: 300%;
+    color:rgba(254, 254, 254, 0.97);
+}
+
+#ball{
+    display: inline-block;
+    margin-left: 45%;
+    width:10%;
+}
+    
+
+#tableau header {
+    position: sticky;
+    top:0%;
+    background-image: url("decoration/fond.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}  
+
+#tableau div{
+    padding-left:5%;
+    display:inline-block 
+}
+
+.buttonaccueil{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor:pointer;
+    margin: 5px;
+    color:white;
+    position: absolute;
+    top:1%;
+    left:89%;
+}
+
+.buttonaccueil span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonaccueil span:after{
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top:0;
+    right:-20px;
+    transition: 0.5s;
+}
+
+.buttonaccueil:hover span{
+    padding-right: 25px;
+}
+
+.buttonaccueil:hover span:after{
+    opacity: 1;
+    right:0;
+}
+
+.buttonaccueil1{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor:pointer;
+    margin: 5px;
+    color:white;
+    position: absolute;
+    top:65%;
+    left:85%;
+}
+
+.buttonaccueil1 span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buttonaccueil1 span:after{
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top:0;
+    right:-20px;
+    transition: 0.5s;
+}
+
+.buttonaccueil1:hover span{
+    padding-right: 25px;
+}
+
+.buttonaccueil1:hover span:after{
+    opacity: 1;
+    right:0;
+}
+
+body{
+    background-color: white;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100em 100em
+}
+

@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="content.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="decoration/pokeball_2.png">
+</head>
+<body>
+    
+    <div id="tableau">
+        <header>
+            <h1>Pokedex</h1><br><br><br><br><br>
+            <input id="searchbar" onkeyup="search_pokemon()" type="text" name="search" placeholder="Rechercher un Pokemon.."></input>
+            <img id="ball" src="decoration/pokeball.png">
+            <a href="pagedegarde.html"><button class="buttonaccueil1" style="vertical-align: middle;"><span>Accueil</span></button></a>
+            <hr>
+        </header>
+        <div>
+            <button onClick="hide('tableau','accueil_2',2)" class="nom"><img class="pp" src="pokemon_icon/pp_2.png"><br><span>Herbizarre</span></button>
+            <button onClick="hide('tableau','accueil_3',3)" class="nom"><img class="pp" src="pokemon_icon/pp_3.png"><br><span>Florizarre</span></button>
+            <button onClick="hide('tableau','accueil_4',4)" class="nom"><img class="pp" src="pokemon_icon/pp_4.png"><br><span>Salamèche</span></button>
+            <button onClick="hide('tableau','accueil_5',5)" class="nom"><img class="pp" src="pokemon_icon/pp_5.png"><br><span>Reptincel</span></button>
+            <button onClick="hide('tableau','accueil_6',6)" class="nom"><img class="pp" src="pokemon_icon/pp_6.png"><br><span>Dracaufeu</span></button>
+            <button onClick="hide('tableau','accueil_7',7)" class="nom"><img class="pp" src="pokemon_icon/pp_7.png"><br><span>Carapuce</span></button>
+            <button onClick="hide('tableau','accueil_8',8)" class="nom"><img class="pp" src="pokemon_icon/pp_8.png"><br><span>Carabaffe</span></button>
+            <button onClick="hide('tableau','accueil_9',9)" class="nom"><img class="pp" src="pokemon_icon/pp_9.png"><br><span>Tortank</span></button>
+            <button onClick="hide('tableau','accueil_10',10)" class="nom"><img class="pp" src="pokemon_icon/pp_10.png"><br><span>Chenipan</span></button>
+            <button onClick="hide('tableau','accueil_11',11)" class="nom"><img class="pp" src="pokemon_icon/pp_11.png"><br><span>Chrysacier</span></button>
+            <button onClick="hide('tableau','accueil_12',12)" class="nom"><img class="pp" src="pokemon_icon/pp_12.png"><br><span>Papilusion</span></button>
+
+            <button onClick="hide('tableau','accueil_13',13)" class="nom"><img class="pp" src="pokemon_icon/pp_13.png"><br><span>Aspicot</span></button>
+            <button onClick="hide('tableau','accueil_14',14)" class="nom"><img class="pp" src="pokemon_icon/pp_14.png"><br><span>Coconfort</span></button>
+            <button onClick="hide('tableau','accueil_15',15)" class="nom"><img class="pp" src="pokemon_icon/pp_15.png"><br><span>Dardargnan</span></button>
+            <button onClick="hide('tableau','accueil_16',16)" class="nom"><img class="pp" src="pokemon_icon/pp_16.png"><br><span>Roucool</span></button>
+            <button onClick="hide('tableau','accueil_17',17)" class="nom"><img class="pp" src="pokemon_icon/pp_17.png"><br><span>Roucoups</span></button>
+            <button onClick="hide('tableau','accueil_18',18)" class="nom"><img class="pp" src="pokemon_icon/pp_18.png"><br><span>Roucarnage</span></button>
+            <button onClick="hide('tableau','accueil_19',19)" class="nom"><img class="pp" src="pokemon_icon/pp_19.png"><br><span>Rattata</span></button>
+            <button onClick="hide('tableau','accueil_20',20)" class="nom"><img class="pp" src="pokemon_icon/pp_20.png"><br><span>Rattatac</span></button>
+            <button onClick="hide('tableau','accueil_21',21)" class="nom"><img class="pp" src="pokemon_icon/pp_21.png"><br><span>Piafabec</span></button>
+            <button onClick="hide('tableau','accueil_22',22)" class="nom"><img class="pp" src="pokemon_icon/pp_22.png"><br><span>Rapasdepic</span></button>
+            <button onClick="hide('tableau','accueil_23',23)" class="nom"><img class="pp" src="pokemon_icon/pp_23.png"><br><span>Abo</span></button>
+            <button onClick="hide('tableau','accueil_24',24)" class="nom"><img class="pp" src="pokemon_icon/pp_24.png"><br><span>Arbok</span></button>
+
+            <button onClick="hide('tableau','accueil_25',25)" class="nom"><img class="pp" src="pokemon_icon/pp_25.png"><br><span>Pikachu</span></button>
+            <button onClick="hide('tableau','accueil_26',26)" class="nom"><img class="pp" src="pokemon_icon/pp_26.png"><br><span>Raichu</span></button>
+            <button onClick="hide('tableau','accueil_27',27)" class="nom"><img class="pp" src="pokemon_icon/pp_27.png"><br><span>Sabelette</span></button>
+            <button onClick="hide('tableau','accueil_28',28)" class="nom"><img class="pp" src="pokemon_icon/pp_28.png"><br><span>Sablaireau</span></button>
+            <button onClick="hide('tableau','accueil_29',29)" class="nom"><img class="pp" src="pokemon_icon/pp_29.png"><br><span>Nidoran♀</span></button>
+            <button onClick="hide('tableau','accueil_30',30)" class="nom"><img class="pp" src="pokemon_icon/pp_30.png"><br><span>Nidorina</span></button>
+            <button onClick="hide('tableau','accueil_31',31)" class="nom"><img class="pp" src="pokemon_icon/pp_31.png"><br><span>Nidoqueen</span></button>
+            <button onClick="hide('tableau','accueil_32',32)" class="nom"><img class="pp" src="pokemon_icon/pp_32.png"><br><span>Nidoran♂</span></button>
+            <button onClick="hide('tableau','accueil_33',33)" class="nom"><img class="pp" src="pokemon_icon/pp_33.png"><br><span>Nidorino</span></button>
+            <button onClick="hide('tableau','accueil_34',34)" class="nom"><img class="pp" src="pokemon_icon/pp_34.png"><br><span>Nidoking</span></button>
+            <button onClick="hide('tableau','accueil_35',35)" class="nom"><img class="pp" src="pokemon_icon/pp_35.png"><br><span>Mélofée</span></button>
+            <button onClick="hide('tableau','accueil_36',36)" class="nom"><img class="pp" src="pokemon_icon/pp_36.png"><br><span>Mélodelfe</span></button>
+
+            <button onClick="hide('tableau','accueil_37',37)" class="nom"><img class="pp" src="pokemon_icon/pp_37.png"><br><span>Goupix</span></button>
+            <button onClick="hide('tableau','accueil_38',38)" class="nom"><img class="pp" src="pokemon_icon/pp_38.png"><br><span>Feunard</span></button>
+            <button onClick="hide('tableau','accueil_39',39)" class="nom"><img class="pp" src="pokemon_icon/pp_39.png"><br><span>Rondoudou</span></button>
+            <button onClick="hide('tableau','accueil_40',40)" class="nom"><img class="pp" src="pokemon_icon/pp_40.png"><br><span>Grodoudou</span></button>
+            <button onClick="hide('tableau','accueil_41',41)" class="nom"><img class="pp" src="pokemon_icon/pp_41.png"><br><span>Nosferapti</span></button>
+            <button onClick="hide('tableau','accueil_42',42)" class="nom"><img class="pp" src="pokemon_icon/pp_42.png"><br><span>Nosferalto</span></button>
+            <button onClick="hide('tableau','accueil_43',43)" class="nom"><img class="pp" src="pokemon_icon/pp_43.png"><br><span>Mystherbe</span></button>
+            <button onClick="hide('tableau','accueil_44',44)" class="nom"><img class="pp" src="pokemon_icon/pp_44.png"><br><span>Ortide</span></button>
+            <button onClick="hide('tableau','accueil_45',45)" class="nom"><img class="pp" src="pokemon_icon/pp_45.png"><br><span>Rafflesia</span></button>
+            <button onClick="hide('tableau','accueil_46',46)" class="nom"><img class="pp" src="pokemon_icon/pp_46.png"><br><span>Paras</span></button>
+            <button onClick="hide('tableau','accueil_47',47)" class="nom"><img class="pp" src="pokemon_icon/pp_47.png"><br><span>Parasect</span></button>
+            <button onClick="hide('tableau','accueil_48',48)" class="nom"><img class="pp" src="pokemon_icon/pp_48.png"><br><span>Mimitoss</span></button>
+
+            <button onClick="hide('tableau','accueil_49',49)" class="nom"><img class="pp" src="pokemon_icon/pp_49.png"><br><span>Aéromite</span></button>
+            <button onClick="hide('tableau','accueil_50',50)" class="nom"><img class="pp" src="pokemon_icon/pp_50.png"><br><span>Taupiqueur</span></button>
+            <button onClick="hide('tableau','accueil_51',51)" class="nom"><img class="pp" src="pokemon_icon/pp_51.png"><br><span>Triopikeur</span></button>
+            <button onClick="hide('tableau','accueil_52',52)" class="nom"><img class="pp" src="pokemon_icon/pp_52.png"><br><span>Miaouss</span></button>
+            <button onClick="hide('tableau','accueil_53',53)" class="nom"><img class="pp" src="pokemon_icon/pp_53.png"><br><span>Persian</span></button>
+            <button onClick="hide('tableau','accueil_54',54)" class="nom"><img class="pp" src="pokemon_icon/pp_54.png"><br><span>Psykokwak</span></button>
+            <button onClick="hide('tableau','accueil_55',55)" class="nom"><img class="pp" src="pokemon_icon/pp_55.png"><br><span>Akwakwak</span></button>
+            <button onClick="hide('tableau','accueil_56',56)" class="nom"><img class="pp" src="pokemon_icon/pp_56.png"><br><span>Férosinge</span></button>
+            <button onClick="hide('tableau','accueil_57',57)" class="nom"><img class="pp" src="pokemon_icon/pp_57.png"><br><span>Colossinge</span></button>
+            <button onClick="hide('tableau','accueil_58',58)" class="nom"><img class="pp" src="pokemon_icon/pp_58.png"><br><span>Caninos</span></button>
+            <button onClick="hide('tableau','accueil_59',59)" class="nom"><img class="pp" src="pokemon_icon/pp_59.png"><br><span>Arcanin</span></button>
+            <button onClick="hide('tableau','accueil_60',60)" class="nom"><img class="pp" src="pokemon_icon/pp_60.png"><br><span>Ptitard</span></button>
+
+            <button onClick="hide('tableau','accueil_61',61)" class="nom"><img class="pp" src="pokemon_icon/pp_61.png"><br><span>Têtarte</span></button>
+            <button onClick="hide('tableau','accueil_62',62)" class="nom"><img class="pp" src="pokemon_icon/pp_62.png"><br><span>Tartard</span></button>
+            <button onClick="hide('tableau','accueil_63',63)" class="nom"><img class="pp" src="pokemon_icon/pp_63.png"><br><span>Abra</span></button>
+            <button onClick="hide('tableau','accueil_64',64)" class="nom"><img class="pp" src="pokemon_icon/pp_64.png"><br><span>Kadabra</span></button>
+            <button onClick="hide('tableau','accueil_65',65)" class="nom"><img class="pp" src="pokemon_icon/pp_65.png"><br><span>Alakazam</span></button>
+            <button onClick="hide('tableau','accueil_66',66)" class="nom"><img class="pp" src="pokemon_icon/pp_66.png"><br><span>Machoc</span></button>
+            <button onClick="hide('tableau','accueil_67',67)" class="nom"><img class="pp" src="pokemon_icon/pp_67.png"><br><span>Machopeur</span></button>
+            <button onClick="hide('tableau','accueil_68',68)" class="nom"><img class="pp" src="pokemon_icon/pp_68.png"><br><span>Mackogneur</span></button>
+            <button onClick="hide('tableau','accueil_69',69)" class="nom"><img class="pp" src="pokemon_icon/pp_69.png"><br><span>Chétiflor</span></button>
+            <button onClick="hide('tableau','accueil_70',70)" class="nom"><img class="pp" src="pokemon_icon/pp_70.png"><br><span>Boustiflor</span></button>
+            <button onClick="hide('tableau','accueil_71',71)" class="nom"><img class="pp" src="pokemon_icon/pp_71.png"><br><span>Empiflor</span></button>
+            <button onClick="hide('tableau','accueil_72',72)" class="nom"><img class="pp" src="pokemon_icon/pp_72.png"><br><span>Tentacool</span></button>
+
+            <button onClick="hide('tableau','accueil_73',73)" class="nom"><img class="pp" src="pokemon_icon/pp_73.png"><br><span>Tentacruel</span></button>
+            <button onClick="hide('tableau','accueil_74',74)" class="nom"><img class="pp" src="pokemon_icon/pp_74.png"><br><span>Racaillou</span></button>
+            <button onClick="hide('tableau','accueil_75',75)" class="nom"><img class="pp" src="pokemon_icon/pp_75.png"><br><span>Gravalanch</span></button>
+            <button onClick="hide('tableau','accueil_76',76)" class="nom"><img class="pp" src="pokemon_icon/pp_76.png"><br><span>Grolem</span></button>
+            <button onClick="hide('tableau','accueil_77',77)" class="nom"><img class="pp" src="pokemon_icon/pp_77.png"><br><span>Ponyta</span></button>
+            <button onClick="hide('tableau','accueil_78',78)" class="nom"><img class="pp" src="pokemon_icon/pp_78.png"><br><span>Galopa</span></button>
+            <button onClick="hide('tableau','accueil_79',79)" class="nom"><img class="pp" src="pokemon_icon/pp_79.png"><br><span>Ramoloss</span></button>
+            <button onClick="hide('tableau','accueil_80',80)" class="nom"><img class="pp" src="pokemon_icon/pp_80.png"><br><span>Flagadoss</span></button>
+            <button onClick="hide('tableau','accueil_81',81)" class="nom"><img class="pp" src="pokemon_icon/pp_81.png"><br><span>Magnéti</span></button>
+            <button onClick="hide('tableau','accueil_82',82)" class="nom"><img class="pp" src="pokemon_icon/pp_82.png"><br><span>Magnéton</span></button>
+            <button onClick="hide('tableau','accueil_83',83)" class="nom"><img class="pp" src="pokemon_icon/pp_83.png"><br><span>Canarticho</span></button>
+            <button onClick="hide('tableau','accueil_84',84)" class="nom"><img class="pp" src="pokemon_icon/pp_84.png"><br><span>Doduo</span></button>
+
+            <button onClick="hide('tableau','accueil_85',85)" class="nom"><img class="pp" src="pokemon_icon/pp_85.png"><br><span>Dodrio</span></button>
+            <button onClick="hide('tableau','accueil_86',86)" class="nom"><img class="pp" src="pokemon_icon/pp_86.png"><br><span>Otaria</span></button>
+            <button onClick="hide('tableau','accueil_87',87)" class="nom"><img class="pp" src="pokemon_icon/pp_87.png"><br><span>Lamantine</span></button>
+            <button onClick="hide('tableau','accueil_88',88)" class="nom"><img class="pp" src="pokemon_icon/pp_88.png"><br><span>Tadmorv</span></button>
+            <button onClick="hide('tableau','accueil_89',89)" class="nom"><img class="pp" src="pokemon_icon/pp_89.png"><br><span>Grotadmorv</span></button>
+            <button onClick="hide('tableau','accueil_90',90)" class="nom"><img class="pp" src="pokemon_icon/pp_90.png"><br><span>Kokiyas</span></button>
+            <button onClick="hide('tableau','accueil_91',91)" class="nom"><img class="pp" src="pokemon_icon/pp_91.png"><br><span>Crustabri</span></button>
+            <button onClick="hide('tableau','accueil_92',92)" class="nom"><img class="pp" src="pokemon_icon/pp_92.png"><br><span>Fantominus</span></button>
+            <button onClick="hide('tableau','accueil_93',93)" class="nom"><img class="pp" src="pokemon_icon/pp_93.png"><br><span>Spectrum</span></button>
+            <button onClick="hide('tableau','accueil_94',94)" class="nom"><img class="pp" src="pokemon_icon/pp_94.png"><br><span>Ectoplasma</span></button>
+            <button onClick="hide('tableau','accueil_95',95)" class="nom"><img class="pp" src="pokemon_icon/pp_95.png"><br><span>Onix</span></button>
+            <button onClick="hide('tableau','accueil_96',96)" class="nom"><img class="pp" src="pokemon_icon/pp_96.png"><br><span>Soporifik</span></button>
+
+            <button onClick="hide('tableau','accueil_97',97)" class="nom"><img class="pp" src="pokemon_icon/pp_97.png"><br><span>Hypnomade</span></button>
+            <button onClick="hide('tableau','accueil_98',98)" class="nom"><img class="pp" src="pokemon_icon/pp_98.png"><br><span>Krabby</span></button>
+            <button onClick="hide('tableau','accueil_99',99)" class="nom"><img class="pp" src="pokemon_icon/pp_99.png"><br><span>Krabboss</span></button>
+            <button onClick="hide('tableau','accueil_100',100)" class="nom"><img class="pp" src="pokemon_icon/pp_100.png"><br><span>Voltorbe</span></button>
+            <button onClick="hide('tableau','accueil_101',101)" class="nom"><img class="pp" src="pokemon_icon/pp_101.png"><br><span>Électrode</span></button>
+            <button onClick="hide('tableau','accueil_102',102)" class="nom"><img class="pp" src="pokemon_icon/pp_102.png"><br><span>Noeunoeuf</span></button>
+            <button onClick="hide('tableau','accueil_103',103)" class="nom"><img class="pp" src="pokemon_icon/pp_103.png"><br><span>Noadkoko</span></button>
+            <button onClick="hide('tableau','accueil_104',104)" class="nom"><img class="pp" src="pokemon_icon/pp_104.png"><br><span>Osselait</span></button>
+            <button onClick="hide('tableau','accueil_105',105)" class="nom"><img class="pp" src="pokemon_icon/pp_105.png"><br><span>Ossatueur</span></button>
+            <button onClick="hide('tableau','accueil_106',106)" class="nom"><img class="pp" src="pokemon_icon/pp_106.png"><br><span>Kicklee</span></button>
+            <button onClick="hide('tableau','accueil_107',107)" class="nom"><img class="pp" src="pokemon_icon/pp_107.png"><br><span>Tygnon</span></button>
+            <button onClick="hide('tableau','accueil_108',108)" class="nom"><img class="pp" src="pokemon_icon/pp_108.png"><br><span>Excelangue</span></button>
+
+            <button onClick="hide('tableau','accueil_109',109)" class="nom"><img class="pp" src="pokemon_icon/pp_109.png"><br><span>Smogo</span></button>
+            <button onClick="hide('tableau','accueil_110',110)" class="nom"><img class="pp" src="pokemon_icon/pp_110.png"><br><span>Smogogo</span></button>
+            <button onClick="hide('tableau','accueil_111',111)" class="nom"><img class="pp" src="pokemon_icon/pp_111.png"><br><span>Rhinocorne</span></button>
+            <button onClick="hide('tableau','accueil_112',112)" class="nom"><img class="pp" src="pokemon_icon/pp_112.png"><br><span>Rhinoféros</span></button>
+            <button onClick="hide('tableau','accueil_113',113)" class="nom"><img class="pp" src="pokemon_icon/pp_113.png"><br><span>Leveinard</span></button>
+            <button onClick="hide('tableau','accueil_114',114)" class="nom"><img class="pp" src="pokemon_icon/pp_114.png"><br><span>Saquedeneu</span></button>
+            <button onClick="hide('tableau','accueil_115',115)" class="nom"><img class="pp" src="pokemon_icon/pp_115.png"><br><span>Kangourex</span></button>
+            <button onClick="hide('tableau','accueil_116',116)" class="nom"><img class="pp" src="pokemon_icon/pp_116.png"><br><span>Hypotrempe</span></button>
+            <button onClick="hide('tableau','accueil_117',117)" class="nom"><img class="pp" src="pokemon_icon/pp_117.png"><br><span>Hypocéan</span></button>
+            <button onClick="hide('tableau','accueil_118',118)" class="nom"><img class="pp" src="pokemon_icon/pp_118.png"><br><span>Poissirène</span></button>
+            <button onClick="hide('tableau','accueil_119',119)" class="nom"><img class="pp" src="pokemon_icon/pp_119.png"><br><span>Poissoroy</span></button>
+            <button onClick="hide('tableau','accueil_120',120)" class="nom"><img class="pp" src="pokemon_icon/pp_120.png"><br><span>Stari</span></button>
+
+            <button onClick="hide('tableau','accueil_121',121)" class="nom"><img class="pp" src="pokemon_icon/pp_121.png"><br><span>Staross</span></button>
+            <button onClick="hide('tableau','accueil_122',122)" class="nom"><img class="pp" src="pokemon_icon/pp_122.png"><br><span>M. Mime</span></button>
+            <button onClick="hide('tableau','accueil_123',123)" class="nom"><img class="pp" src="pokemon_icon/pp_123.png"><br><span>Insécateur</span></button>
+            <button onClick="hide('tableau','accueil_124',124)" class="nom"><img class="pp" src="pokemon_icon/pp_124.png"><br><span>Lippoutou</span></button>
+            <button onClick="hide('tableau','accueil_125',125)" class="nom"><img class="pp" src="pokemon_icon/pp_125.png"><br><span>Élektek</span></button>
+            <button onClick="hide('tableau','accueil_126',126)" class="nom"><img class="pp" src="pokemon_icon/pp_126.png"><br><span>Magmar</span></button>
+            <button onClick="hide('tableau','accueil_127',127)" class="nom"><img class="pp" src="pokemon_icon/pp_127.png"><br><span>Scarabrute</span></button>
+            <button onClick="hide('tableau','accueil_128',128)" class="nom"><img class="pp" src="pokemon_icon/pp_128.png"><br><span>Tauros</span></button>
+            <button onClick="hide('tableau','accueil_129',129)" class="nom"><img class="pp" src="pokemon_icon/pp_129.png"><br><span>Magicarpe</span></button>
+            <button onClick="hide('tableau','accueil_130',130)" class="nom"><img class="pp" src="pokemon_icon/pp_130.png"><br><span>Léviator</span></button>
+            <button onClick="hide('tableau','accueil_131',131)" class="nom"><img class="pp" src="pokemon_icon/pp_131.png"><br><span>Lokhlass</span></button>
+            <button onClick="hide('tableau','accueil_132',132)" class="nom"><img class="pp" src="pokemon_icon/pp_132.png"><br><span>Métamorph</span></button>
+
+            <button onClick="hide('tableau','accueil_133',133)" class="nom"><img class="pp" src="pokemon_icon/pp_133.png"><br><span>Évoli</span></button>
+            <button onClick="hide('tableau','accueil_134',134)" class="nom"><img class="pp" src="pokemon_icon/pp_134.png"><br><span>Aquali</span></button>
+            <button onClick="hide('tableau','accueil_135',135)" class="nom"><img class="pp" src="pokemon_icon/pp_135.png"><br><span>Voltali</span></button>
+            <button onClick="hide('tableau','accueil_136',136)" class="nom"><img class="pp" src="pokemon_icon/pp_136.png"><br><span>Pyroli</span></button>
+            <button onClick="hide('tableau','accueil_137',137)" class="nom"><img class="pp" src="pokemon_icon/pp_137.png"><br><span>Porygon</span></button>
+            <button onClick="hide('tableau','accueil_138',138)" class="nom"><img class="pp" src="pokemon_icon/pp_138.png"><br><span>Amonita</span></button>
+            <button onClick="hide('tableau','accueil_139',139)" class="nom"><img class="pp" src="pokemon_icon/pp_139.png"><br><span>Amonistar</span></button>
+            <button onClick="hide('tableau','accueil_140',140)" class="nom"><img class="pp" src="pokemon_icon/pp_140.png"><br><span>Kabuto</span></button>
+            <button onClick="hide('tableau','accueil_141',141)" class="nom"><img class="pp" src="pokemon_icon/pp_141.png"><br><span>Kabutops</span></button>
+            <button onClick="hide('tableau','accueil_142',142)" class="nom"><img class="pp" src="pokemon_icon/pp_142.png"><br><span>Ptéra</span></button>
+            <button onClick="hide('tableau','accueil_143',143)" class="nom"><img class="pp" src="pokemon_icon/pp_143.png"><br><span>Ronflex</span></button>
+            <button onClick="hide('tableau','accueil_144',144)" class="nom"><img class="pp" src="pokemon_icon/pp_144.png"><br><span>Artikodin</span></button>
+
+            <button onClick="hide('tableau','accueil_145',145)" class="nom"><img class="pp" src="pokemon_icon/pp_145.png"><br><span>Électhor</span></button>
+            <button onClick="hide('tableau','accueil_146',146)" class="nom"><img class="pp" src="pokemon_icon/pp_146.png"><br><span>Sulfura</span></button>
+            <button onClick="hide('tableau','accueil_147',147)" class="nom"><img class="pp" src="pokemon_icon/pp_147.png"><br><span>Minidraco</span></button>
+            <button onClick="hide('tableau','accueil_148',148)" class="nom"><img class="pp" src="pokemon_icon/pp_148.png"><br><span>Draco</span></button>
+            <button onClick="hide('tableau','accueil_149',149)" class="nom"><img class="pp" src="pokemon_icon/pp_149.png"><br><span>Dracolosse</span></button>
+            <button onClick="hide('tableau','accueil_150',150)" class="nom"><img class="pp" src="pokemon_icon/pp_150.png"><br><span>Mewtwo</span></button>
+            <button onClick="hide('tableau','accueil_151',151)" class="nom"><img class="pp" src="pokemon_icon/pp_151.png"><br><span>Mew</span></button>
+        </div>
+    </div>
+
+    <div style="display:none" id="accueil_1">
+        <button class="buttonaccueil" onClick="retour('accueil_1','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_1.png">
+        <p>Il a une étrange graine plantée<br> sur son dos. Elle grandit avec<br> lui depuis la naissance.</p>
+        <img class="stats" src="stats/1.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_2">
+        <button class="buttonaccueil" onClick="retour('accueil_2','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_2.png">
+        <p>Son bulbe dorsal devient si gros<br> qu'il ne peut plus se tenir sur ses<br> membres postérieurs.</p>
+        <img class="stats" src="stats/2.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_3">
+        <button class="buttonaccueil" onClick="retour('accueil_3','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_3.png">
+        <p>Sa plante mûrit en absorbant les<br> rayons du soleil. Il migre souvent<br> vers les endroits ensoleillés.</p>
+        <img class="stats" src="stats/3.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_4">
+        <button class="buttonaccueil" onClick="retour('accueil_4','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img id="salameche" class="image" src="pokemon_pic/image_4.png">
+        <p>Il préfère les endroits chauds. En<br> cas de pluie, de la vapeur se forme<br> autour de sa queue.</p>
+        <img class="stats" src="stats/4.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_5">
+        <button class="buttonaccueil" onClick="retour('accueil_5','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img id="reptincel" class="image" src="pokemon_pic/image_5.png">
+        <p>En agitant sa queue, il peut élever<br> le niveau de la température à un<br> degré incroyable.</p>
+        <img class="stats" src="stats/5.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_6">
+        <button class="buttonaccueil" onClick="retour('accueil_6','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="dracaufeu" class="image" src="pokemon_pic/image_6.png">
+        <p>Il peut fondre la roche de son<br> souffle brûlant. Il est souvent la<br> cause de nombreux incendies.</p>
+        <img class="stats" src="stats/6.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_7">
+        <button class="buttonaccueil" onClick="retour('accueil_7','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img id="carapuce" class="image" src="pokemon_pic/image_7.png">
+        <p>Son dos durcit avec l'âge et devient<br> une super carapace. Il peut cracher<br> des jets d'écume.</p>
+        <img class="stats" src="stats/7.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_8">
+        <button class="buttonaccueil" onClick="retour('accueil_8','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_8.png">
+        <p>Il se cache au fond de l'eau pour<br> guetter sa proie. Ses oreilles sont<br> des gouvernails.</p>
+        <img class="stats" src="stats/8.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_9">
+        <button class="buttonaccueil" onClick="retour('accueil_9','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img id="tortank" class="image" src="pokemon_pic/image_9.png">
+        <p>Un POKEMON brutal armé de<br> canons hydrauliques. Ses puissants<br> jets d'eau sont dévastateurs.</p>
+        <img class="stats" src="stats/9.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_10">
+        <button class="buttonaccueil" onClick="retour('accueil_10','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">       
+        <img class="type" src="type/type_insecte.png">
+        <img class="image" src="pokemon_pic/image_10.png">
+        <p>Ses petites pattes sont équipées<br> de ventouses, lui permettant de<br> grimper aux murs.</p>
+        <img class="stats" src="stats/10.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_11">
+        <button class="buttonaccueil" onClick="retour('accueil_11','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img id="chrysacier" class="image" src="pokemon_pic/image_11.png">
+        <p>Il est vulnérable aux attaques tant<br> que sa carapace fragile expose<br> son corps tendre et mou.</p>
+        <img class="stats" src="stats/11.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_12">
+        <button class="buttonaccueil" onClick="retour('accueil_12','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_vol.png">
+        <img class="image" src="pokemon_pic/image_12.png">
+        <p>En combat, il bat des ailes très<br> rapidement pour projeter des<br> poudres toxiques sur ses ennemis.</p>
+        <img class="stats" src="stats/12.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_13">
+        <button class="buttonaccueil" onClick="retour('accueil_13','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_poison.png">
+        <img id="aspicot" class="image" src="pokemon_pic/image_13.png">
+        <p>Il se nourrit de feuilles dans les<br> forêts. L'aiguillon sur son front<br> est empoisonné.</p>
+        <img class="stats" src="stats/13.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_14">
+        <button class="buttonaccueil" onClick="retour('accueil_14','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="coconfort" class="image" src="pokemon_pic/image_14.png">
+        <p>Incapable de se déplacer de<br> lui-même, il se défend en<br> durcissant sa carapace.</p>
+        <img class="stats" src="stats/14.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_15">
+        <button class="buttonaccueil" onClick="retour('accueil_15','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_poison.png">
+        <img id="dardargnan" class="image" src="pokemon_pic/image_15.png">
+        <p>Il vole à très grande vitesse. Il se<br> bat avec les dards empoisonnés<br> de ses bras.</p>
+        <img class="stats" src="stats/15.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_16">
+        <button class="buttonaccueil" onClick="retour('accueil_16','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="roucool" class="image" src="pokemon_pic/image_16.png">
+        <p>Il est souvent vu dans les forêts. Il<br> brasse l'air de ses ailes près du<br> sol pour projeter du sable.</p>
+        <img class="stats" src="stats/16.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_17">
+        <button class="buttonaccueil" onClick="retour('accueil_17','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="roucoups" class="image" src="pokemon_pic/image_17.png">
+        <p>Il protège son territoire avec ardeur<br> et repousse à coups de bec tout<br> intrus.</p>
+        <img class="stats" src="stats/17.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_18">
+        <button class="buttonaccueil" onClick="retour('accueil_18','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="roucarnage" class="image" src="pokemon_pic/image_18.png">
+        <p>Il chasse en survolant la surface de<br> l'eau et en plongeant pour attraper<br> des proies faciles.</p>
+        <img class="stats" src="stats/18.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_19">
+        <button class="buttonaccueil" onClick="retour('accueil_19','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_19.png">
+        <p>Sa morsure est très puissante. Petit<br> et rapide, on en voit un peu partout.</p>
+        <img class="stats" src="stats/19.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_20">
+        <button class="buttonaccueil" onClick="retour('accueil_20','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_20.png">
+        <p>Si ses moustaches sont coupées, il<br> perd le sens de l'équilibre et<br> devient moins rapide.</p>
+        <img class="stats" src="stats/20.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_21">
+        <button class="buttonaccueil" onClick="retour('accueil_21','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img class="image" src="pokemon_pic/image_21.png">
+        <p>Il chasse les insectes dans les<br> hautes herbes. Ses petites ailes<br> lui permettent de voler très vite.</p>
+        <img class="stats" src="stats/21.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_22">
+        <button class="buttonaccueil" onClick="retour('accueil_22','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img class="image" src="pokemon_pic/image_22.png">
+        <p>Ses ailes géantes lui permettent de<br> planer si longtemps qu'il ne se<br> pose que très rarement.</p>
+        <img class="stats" src="stats/22.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_23">
+        <button class="buttonaccueil" onClick="retour('accueil_23','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_23.png">
+        <p>Il se déplace en silence pour<br> dévorer des oeufs de ROUCOOL<br> ou de PIAFABEC.</p>
+        <img class="stats" src="stats/23.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>    
+    <div style="display:none" id="accueil_24">
+        <button class="buttonaccueil" onClick="retour('accueil_24','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img id="arbok" class="image" src="pokemon_pic/image_24.png">
+        <p>Les motifs féroces peints sur son<br> corps changent selon son<br> environnement.</p>
+        <img class="stats" src="stats/24.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_25">
+        <button class="buttonaccueil" onClick="retour('accueil_25','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="image" src="pokemon_pic/image_25.png">
+        <p>Quand plusieurs de ces POKÉMON<br> se réunissent, ils provoquent de<br> gigantesques orages.</p>
+        <img class="stats" src="stats/25.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_26">
+        <button class="buttonaccueil" onClick="retour('accueil_26','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="image" src="pokemon_pic/image_26.png">
+        <p>Il doit garder sa queue en contact<br> avec le sol pour éviter toute<br> électrocution.</p>
+        <img class="stats" src="stats/26.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>    
+    <div style="display:none" id="accueil_27">
+        <button class="buttonaccueil" onClick="retour('accueil_27','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img id="sabelette" class="image" src="pokemon_pic/image_27.png">
+        <p>Il s'enterre dans les régions arides<br> et désertiques. Il émerge seulement<br> pour chasser.</p>
+        <img class="stats" src="stats/27.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_28">
+        <button class="buttonaccueil" onClick="retour('accueil_28','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img class="image" src="pokemon_pic/image_28.png">
+        <p>Il se roule en boule hérissée de<br> piques s'il est menacé. Il peut ainsi<br> s'enfuir ou attaquer.</p>
+        <img class="stats" src="stats/28.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_29">
+        <button class="buttonaccueil" onClick="retour('accueil_29','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_29.png">
+        <p>Ce POKEMON est hérissé de dards<br> empoisonnés. Les femelles ont des<br> dards plus petits.</p>
+        <img class="stats" src="stats/29.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>    
+    <div style="display:none" id="accueil_30">
+        <button class="buttonaccueil" onClick="retour('accueil_30','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img id="nidorina" class="image" src="pokemon_pic/image_30.png">
+        <p>La corne de la femelle grandit<br> lentement. Elle préfère attaquer<br> avec ses griffes et sa gueule.</p>
+        <img class="stats" src="stats/30.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_31">
+        <button class="buttonaccueil" onClick="retour('accueil_31','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img class="type2" src="type/type_sol.png">
+        <img class="image" src="pokemon_pic/image_31.png">
+        <p>Ses écailles très résistantes et son<br> corps massif sont des armes<br> dévastatrices.</p>
+        <img class="stats" src="stats/31.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_32">
+        <button class="buttonaccueil" onClick="retour('accueil_32','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img id="nidoran" class="image" src="pokemon_pic/image_32.png">
+        <p>Son ouïe très fine l'avertit du<br> danger. Plus ses cornes sont<br> grandes, plus son poison est mortel.</p>
+        <img class="stats" src="stats/32.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>    
+    <div style="display:none" id="accueil_33">
+        <button class="buttonaccueil" onClick="retour('accueil_33','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img id="nidorino" class="image" src="pokemon_pic/image_33.png">
+        <p>Très agressif, il est prompt à<br> répondre à la violence. La corne<br> sur sa tête est venimeuse.</p>
+        <img class="stats" src="stats/33.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_34">
+        <button class="buttonaccueil" onClick="retour('accueil_34','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img class="type2" src="type/type_sol.png">
+        <img id="nidoking" class="image" src="pokemon_pic/image_34.png">
+        <p>Sa queue est une arme redoutable,<br> il s'en sert pour attraper sa proie<br> et lui broyer les os.</p>
+        <img class="stats" src="stats/34.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_35">
+        <button class="buttonaccueil" onClick="retour('accueil_35','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_35.png">
+        <p>Très recherché pour son aura<br> mystique, il est très rare et ne vit<br> que dans des endroits précis.</p>
+        <img class="stats" src="stats/35.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>    
+    <div style="display:none" id="accueil_36">
+        <button class="buttonaccueil" onClick="retour('accueil_36','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_36.png">
+        <p>Une sorte de petite fée très rare.<br> Il se cache en apercevant un être<br> humain.</p>
+        <img class="stats" src="stats/36.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_37">
+        <button class="buttonaccueil" onClick="retour('accueil_37','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img class="image" src="pokemon_pic/image_37.png">
+        <p>Il n'a qu'une seule queue à la<br> naissance. Sa queue se divise à la<br> pointe au fil des ans.</p>
+        <img class="stats" src="stats/37.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_38">
+        <button class="buttonaccueil" onClick="retour('accueil_38','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img class="image" src="pokemon_pic/image_38.png">
+        <p>Très intelligent et rancunier.<br> Attrapez-lui une de ses queues et<br> il vous maudira pour 1000 ans.</p>
+        <img class="stats" src="stats/38.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>    
+    <div style="display:none" id="accueil_39">
+        <button class="buttonaccueil" onClick="retour('accueil_39','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_39.png">
+        <p>Quand ses yeux s'illuminent, il<br> chante une mystérieuse berceuse.</p>
+        <img class="stats" src="stats/39.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_40">
+        <button class="buttonaccueil" onClick="retour('accueil_40','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img id="grosdoudou" class="image" src="pokemon_pic/image_40.png">
+        <p>En cas de danger, il gonfle d'air<br> son corps doux et potelé dans<br> des proportions gigantesques.</p>
+        <img class="stats" src="stats/40.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_41">
+        <button class="buttonaccueil" onClick="retour('accueil_41','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_vol.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_41.png">
+        <p>Se déplace en colonie dans les<br> endroits sombres. Il s'oriente<br> grâce aux ultrasons.</p>
+        <img class="stats" src="stats/41.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_42">
+        <button class="buttonaccueil" onClick="retour('accueil_42','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_vol.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_42.png">
+        <p>Une fois son adversaire mordu, il<br> absorbera son énergie même s'il<br> devient trop gros pour voler.</p>
+        <img class="stats" src="stats/42.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>   
+    <div style="display:none" id="accueil_43">
+        <button class="buttonaccueil" onClick="retour('accueil_43','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img id="mystherbe" class="image" src="pokemon_pic/image_43.png">
+        <p>Pendant la journée il se cache sous<br> terre. Il s'aventure la nuit pour<br> planter des graines.</p>
+        <img class="stats" src="stats/43.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_44">
+        <button class="buttonaccueil" onClick="retour('accueil_44','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_44.png">
+        <p>Le liquide qui s'écoule de sa<br> bouche est comestible. Il sert à<br> appâter sa proie.</p>
+        <img class="stats" src="stats/44.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_45">
+        <button class="buttonaccueil" onClick="retour('accueil_45','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_45.png">
+        <p>Plus ses pétales sont grands, plus<br> ils contiennent de pollen toxique.</p>
+        <img class="stats" src="stats/45.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_46">
+        <button class="buttonaccueil" onClick="retour('accueil_46','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_plante.png">
+        <img class="image" src="pokemon_pic/image_46.png">
+        <p>Les champignons sur son dos se<br> nourrissent des nutriments de leur<br> hôte insectoïde.</p>
+        <img class="stats" src="stats/46.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_47">
+        <button class="buttonaccueil" onClick="retour('accueil_47','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_plante.png">
+        <img class="image" src="pokemon_pic/image_47.png">
+        <p>Une symbiose entre un parasite et<br> un insecte. Le champignon a pris<br> le contrôle de son hôte.</p>
+        <img class="stats" src="stats/47.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_48">
+        <button class="buttonaccueil" onClick="retour('accueil_48','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_poison.png">
+        <img id="mimitoss" class="image" src="pokemon_pic/image_48.png">
+        <p>Il vit à l'ombre des grands arbres où<br> il mange des insectes. Il est attiré<br> par la lumière.</p>
+        <img class="stats" src="stats/48.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_49">
+        <button class="buttonaccueil" onClick="retour('accueil_49','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_49.png">
+        <p>Les motifs ocre de ses ailes<br> changent en fonction de son type<br> de poison.</p>
+        <img class="stats" src="stats/49.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_50">
+        <button class="buttonaccueil" onClick="retour('accueil_50','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img class="image" src="pokemon_pic/image_50.png">
+        <p>Il vit à un mètre sous la terre et<br> se nourrit de racines. Il apparaît<br> rarement à la surface.</p>
+        <img class="stats" src="stats/50.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_51">
+        <button class="buttonaccueil" onClick="retour('accueil_51','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img class="image" src="pokemon_pic/image_51.png">
+        <p>Un groupe de TAUPIQUEUR. Il<br> crée des séismes en creusant à<br> plus de 100km de profondeur.</p>
+        <img class="stats" src="stats/51.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_52">
+        <button class="buttonaccueil" onClick="retour('accueil_52','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img id="miaouss" class="image" src="pokemon_pic/image_52.png">
+        <p>Il adore les pièces de monnaie. Il<br> hante les rues à la recherche de<br> pièces oubliées par les passants.</p>
+        <img class="stats" src="stats/52.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_53">
+        <button class="buttonaccueil" onClick="retour('accueil_53','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_53.png">
+        <p>Très apprécié pour sa fourrure, il<br> est difficile à apprivoiser en raison<br> de son caractère rétif.</p>
+        <img class="stats" src="stats/53.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_54">
+        <button class="buttonaccueil" onClick="retour('accueil_54','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img id="psykokwak" class="image" src="pokemon_pic/image_54.png">
+        <p>Il distrait ses ennemis avec des<br> grimaces débiles et les attaque<br> ensuite avec ses pouvoirs psy.</p>
+        <img class="stats" src="stats/54.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_55">
+        <button class="buttonaccueil" onClick="retour('accueil_55','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_55.png">
+        <p>Il nage avec élégance le long des<br> côtes. Il est souvent confondu<br> avec le monstre japonais: Kappa.</p>
+        <img class="stats" src="stats/55.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_56">
+        <button class="buttonaccueil" onClick="retour('accueil_56','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_combat.png">
+        <img class="image" src="pokemon_pic/image_56.png">
+        <p>Il se met en colère très vite. Calme<br> ou furieux, son humeur change<br> d'une seconde à l'autre.</p>
+        <img class="stats" src="stats/56.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_57">
+        <button class="buttonaccueil" onClick="retour('accueil_57','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_combat.png">
+        <img id="colossinge" class="image" src="pokemon_pic/image_57.png">
+        <p>Agressif et teigneux, il poursuit son<br> gibier jusqu'à épuisement complet.</p>
+        <img class="stats" src="stats/57.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_58">
+        <button class="buttonaccueil" onClick="retour('accueil_58','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img id="caninos" class="image" src="pokemon_pic/image_58.png">
+        <p>Pour protéger son territoire il aboie<br> et mord jusqu'à ce que les intrus<br> s'enfuient.</p>
+        <img class="stats" src="stats/58.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_59">
+        <button class="buttonaccueil" onClick="retour('accueil_59','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img class="image" src="pokemon_pic/image_59.png">
+        <p>Un POKEMON très recherché pour<br> sa grâce légendaire. Son pas<br> élégant semble glisser sur le vent.</p>
+        <img class="stats" src="stats/59.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_60">
+        <button class="buttonaccueil" onClick="retour('accueil_60','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_60.png">
+        <p>Il court mal avec ses petites pattes.<br> Il préfère nager que de se tenir<br> debout.</p>
+        <img class="stats" src="stats/60.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_61">
+        <button class="buttonaccueil" onClick="retour('accueil_61','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_61.png">
+        <p>Amphibie, il peut vivre à l'air libre<br> mais il doit rester mouillé pour<br> survivre.</p>
+        <img class="stats" src="stats/61.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_62">
+        <button class="buttonaccueil" onClick="retour('accueil_62','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_combat.png">
+        <img class="image" src="pokemon_pic/image_62.png">
+        <p>Excellent nageur, il pratique le<br> crawl ou la nage papillon mieux<br> qu'un champion olympique.</p>
+        <img class="stats" src="stats/62.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_63">
+        <button class="buttonaccueil" onClick="retour('accueil_63','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_63.png">
+        <p>Son don de télépathie lui permet<br> de sentir le danger et de se<br> TELEPORTER en un lieu sûr.</p>
+        <img class="stats" src="stats/63.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_64">
+        <button class="buttonaccueil" onClick="retour('accueil_64','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img id="kadabra" class="image" src="pokemon_pic/image_64.png">
+        <p>Son corps émet des ondes alpha<br> provoquant des migraines chez<br> ceux qui se trouvent à proximité.</p>
+        <img class="stats" src="stats/64.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_65">
+        <button class="buttonaccueil" onClick="retour('accueil_65','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_65.png">
+        <p>Son super cerveau peut effectuer<br> des opérations à la vitesse d'un<br> ordinateur. Il a un Q.I. de 5000.</p>
+        <img class="stats" src="stats/65.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_66">
+        <button class="buttonaccueil" onClick="retour('accueil_66','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_combat.png">
+        <img id="machoc" class="image" src="pokemon_pic/image_66.png">
+        <p>Il adore la musculation. Il pratique<br> les arts martiaux pour devenir<br> encore plus fort.</p>
+        <img class="stats" src="stats/66.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_67">
+        <button class="buttonaccueil" onClick="retour('accueil_67','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_combat.png">
+        <img id="machopeur" class="image" src="pokemon_pic/image_67.png">
+        <p>Son corps est si puissant qu'il lui<br> faut une ceinture de force pour<br> équilibrer ses mouvements.</p>
+        <img class="stats" src="stats/67.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_68">
+        <button class="buttonaccueil" onClick="retour('accueil_68','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_combat.png">
+        <img id="mackogneur" class="image" src="pokemon_pic/image_68.png">
+        <p>Ses coups de poing sont si puissants<br> qu'ils font voler ses adversaires<br> jusqu'à l'horizon.</p>
+        <img class="stats" src="stats/68.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_69">
+        <button class="buttonaccueil" onClick="retour('accueil_69','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img id="chetiflor" class="image" src="pokemon_pic/image_69.png">
+        <p>Un POKEMON carnivore qui se<br> nourrit de petits insectes. Ses<br> racines servent d'attaches.</p>
+        <img class="stats" src="stats/69.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_70">
+        <button class="buttonaccueil" onClick="retour('accueil_70','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_70.png">
+        <p>Il crache de la POUDRE TOXIK<br> pour immobiliser sa proie et il<br> l'achève avec de l'ACIDE.</p>
+        <img class="stats" src="stats/70.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_71">
+        <button class="buttonaccueil" onClick="retour('accueil_71','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_71.png">
+        <p>Il vit en colonie dans la jungle<br> mais personne n'en est jamais<br> revenu vivant.</p>
+        <img class="stats" src="stats/71.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_72">
+        <button class="buttonaccueil" onClick="retour('accueil_72','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_72.png">
+        <p>Flottant au bord des côtes, les<br> pêcheurs se font souvent arroser<br> d'acide quand ils en accrochent un.</p>
+        <img class="stats" src="stats/72.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_73">
+        <button class="buttonaccueil" onClick="retour('accueil_73','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_73.png">
+        <p>Ses tentacules sont rétractés au<br> repos. En situation de chasse, ils<br> s'allongent.</p>
+        <img class="stats" src="stats/73.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_74">
+        <button class="buttonaccueil" onClick="retour('accueil_74','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_sol.png">
+        <img id="racaillou" class="image" src="pokemon_pic/image_74.png">
+        <p>Il vit dans les plaines ou les<br> montagnes. On le confond souvent<br> avec un petit caillou.</p>
+        <img class="stats" src="stats/74.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_75">
+        <button class="buttonaccueil" onClick="retour('accueil_75','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_sol.png">
+        <img id="gravalanche" class="image" src="pokemon_pic/image_75.png">
+        <p>Pour se déplacer il dégringole le<br> long des pentes. Il pulvérise tout <br>obstacle sur son passage.</p>
+        <img class="stats" src="stats/75.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_76">
+        <button class="buttonaccueil" onClick="retour('accueil_76','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_sol.png">
+        <img class="image" src="pokemon_pic/image_76.png">
+        <p>Son corps de pierre est<br> indestructible. Il peut supporter des<br> explosions de dynamite.</p>
+        <img class="stats" src="stats/76.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_77">
+        <button class="buttonaccueil" onClick="retour('accueil_77','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img id="ponyta" class="image" src="pokemon_pic/image_77.png">
+        <p>Ses sabots sont plus résistants que<br> le diamant. Il peut aplatir n'importe<br> quoi en le piétinant.</p>
+        <img class="stats" src="stats/77.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_78">
+        <button class="buttonaccueil" onClick="retour('accueil_78','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img id="galopa" class="image" src="pokemon_pic/image_78.png">
+        <p>Doté d'un esprit de compétition, il<br> poursuit toute créature rapide pour<br> faire la course.</p>
+        <img class="stats" src="stats/78.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+    <div style="display:none" id="accueil_79">
+        <button class="buttonaccueil" onClick="retour('accueil_79','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_79.png">
+        <p>Très lent et endormi, il lui faut<br> 5 secondes pour ressentir la<br> douleur d'une attaque.</p>
+        <img class="stats" src="stats/79.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_80">
+        <button class="buttonaccueil" onClick="retour('accueil_80','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_psy.png">
+        <img id="flagadoss" class="image" src="pokemon_pic/image_80.png">
+        <p>Le KOKIYAS accroché à la queue<br> du Ramoloss se nourrit des restes<br> de son hôte.</p>
+        <img class="stats" src="stats/80.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_81">
+        <button class="buttonaccueil" onClick="retour('accueil_81','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="image" src="pokemon_pic/image_81.png">
+        <p>Il contrôle la gravité pour pouvoir<br> voler. Il attaque avec des<br> CAGE-ECLAIR.</p>
+        <img class="stats" src="stats/81.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_82">
+        <button class="buttonaccueil" onClick="retour('accueil_82','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="image" src="pokemon_pic/image_82.png">
+        <p>Constitué de MAGNETI reliés les<br> uns aux autres, il apparait lorsque<br> le soleil brille.</p>
+        <img class="stats" src="stats/82.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_83">
+        <button class="buttonaccueil" onClick="retour('accueil_83','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="canarticho" class="image" src="pokemon_pic/image_83.png">
+        <p>Il utilise le poireau qu'il a dans la<br> bouche comme une épée d'acier.</p>
+        <img class="stats" src="stats/83.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_84">
+        <button class="buttonaccueil" onClick="retour('accueil_84','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="doduo" class="image" src="pokemon_pic/image_84.png">
+        <p>Cet oiseau vole très mal mais court<br> très vite. Il laisse de gigantesques<br> empreintes de pas.</p>
+        <img class="stats" src="stats/84.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_85">
+        <button class="buttonaccueil" onClick="retour('accueil_85','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="dodrio" class="image" src="pokemon_pic/image_85.png">
+        <p>Il élabore des plans complexes avec<br> ses trois cerveaux. Une de ses têtes<br> reste toujours éveillée.</p>
+        <img class="stats" src="stats/85.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_86">
+        <button class="buttonaccueil" onClick="retour('accueil_86','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_86.png">
+        <p>La corne sur son front est très<br> résistante. Elle lui sert à percer<br> des blocs de glace.</p>
+        <img class="stats" src="stats/86.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_87">
+        <button class="buttonaccueil" onClick="retour('accueil_87','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_glace.png">
+        <img class="image" src="pokemon_pic/image_87.png">
+        <p>Il emmagasine la chaleur dans son<br> corps. Il peut nager sous l'eau glacé<br> à plus de 8 noeuds.</p>
+        <img class="stats" src="stats/87.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_88">
+        <button class="buttonaccueil" onClick="retour('accueil_88','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_88.png">
+        <p>Vivant dans des tas d'ordures, il se<br> nourrit des déchets polluants rejetés<br> par les usines.</p>
+        <img class="stats" src="stats/88.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_89">
+        <button class="buttonaccueil" onClick="retour('accueil_89','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img id="grotadmorv" class="image" src="pokemon_pic/image_89.png">
+        <p>Il est recouvert d'une épaisse<br> couche toxique. Il laisse une trace<br> empoisonnée derrière lui.</p>
+        <img class="stats" src="stats/89.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_90">
+        <button class="buttonaccueil" onClick="retour('accueil_90','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_90.png">
+        <p>Protégé par une carapace très<br> résistante, il est vulnérable quand<br> celle-ci s'ouvre.</p>
+        <img class="stats" src="stats/90.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_91">
+        <button class="buttonaccueil" onClick="retour('accueil_91','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_glace.png">
+        <img class="image" src="pokemon_pic/image_91.png">
+        <p>Une fois menacé, il envoie de<br> rapides volées de dards. Sa partie<br> interne est inconnue.</p>
+        <img class="stats" src="stats/91.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_92">
+        <button class="buttonaccueil" onClick="retour('accueil_92','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_spectre.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_92.png">
+        <p>Ce POKEMON gazeux longe ses<br> victimes dans un profond sommeil<br> sans qu'elles ne s'en aperçoivent.</p>
+        <img class="stats" src="stats/92.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_93">
+        <button class="buttonaccueil" onClick="retour('accueil_93','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_spectre.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_93.png">
+        <p>Il peut se glisser à  travers les murs<br> comme une créature d'une autre<br> dimension.</p>
+        <img class="stats" src="stats/93.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_94">
+        <button class="buttonaccueil" onClick="retour('accueil_94','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_spectre.png">
+        <img class="type2" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_94.png">
+        <p>Les nuits de pleine lune, il imite<br> l'ombre des passants et se moque<br> de leur effroi.</p>
+        <img class="stats" src="stats/94.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_95">
+        <button class="buttonaccueil" onClick="retour('accueil_95','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_sol.png">
+        <img id="onix" class="image" src="pokemon_pic/image_95.png">
+        <p>Les parties en pierre de son corps<br> durcissent pour devenir comme un<br> diamant de couleur noire.</p>
+        <img class="stats" src="stats/95.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_96">
+        <button class="buttonaccueil" onClick="retour('accueil_96','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img id="soporifik" class="image" src="pokemon_pic/image_96.png">
+        <p>Il endort ses ennemis et dévore<br> leurs songes. En pangeant de<br> mauvais rêves, il devient malade.</p>
+        <img class="stats" src="stats/96.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_97">
+        <button class="buttonaccueil" onClick="retour('accueil_97','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img id="hypnomade" class="image" src="pokemon_pic/image_97.png">
+        <p>En fixant son adversaire, il<br> s'assaille avec les attaques PSY<br> d'HYPNOSE et de CHOC<br> MENTAL.</p>
+        <img class="stats" src="stats/97.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_98">
+        <button class="buttonaccueil" onClick="retour('accueil_98','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_98.png">
+        <p>Ses pinces sont des armes très<br> puissantes. Elles lui servent aussi<br> à garder son équilibre</p>
+        <img class="stats" src="stats/98.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_99">
+        <button class="buttonaccueil" onClick="retour('accueil_99','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_99.png">
+        <p>Son énorme pince peut déployer<br> une puissance de 10000 CV. Mais<br> elle est très encombrante.</p>
+        <img class="stats" src="stats/99.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_100">
+        <button class="buttonaccueil" onClick="retour('accueil_100','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="image" src="pokemon_pic/image_100.png">
+        <p>Vivant dans les centrales, ce<br> POKEMON survolté est souvent<br> confondu avec une POKE BALL.</p>
+        <img class="stats" src="stats/100.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_101">
+        <button class="buttonaccueil" onClick="retour('accueil_101','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="image" src="pokemon_pic/image_101.png">
+        <p>Il emmagazine des quantités<br> énormes de courant électrique sous<br> pression pouvant exploser.</p>
+        <img class="stats" src="stats/101.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_102">
+        <button class="buttonaccueil" onClick="retour('accueil_102','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_102.png">
+        <p>Souvent pris pour des oeufs, il<br> attaquent en groupe comme un<br> essaim.</p>
+        <img class="stats" src="stats/102.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_103">
+        <button class="buttonaccueil" onClick="retour('accueil_103','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="type2" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_103.png">
+        <p>On raconte que si une de ses têtes<br> se détache, elle se transforme en<br> un NOEUNOEUF.</p>
+        <img class="stats" src="stats/103.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_104">
+        <button class="buttonaccueil" onClick="retour('accueil_104','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img id="osselait" class="image" src="pokemon_pic/image_104.png">
+        <p>Il ne retire jamais son casque en os.<br> Personne n'a jamais vu le visage de<br> ce POKEMON.</p>
+        <img class="stats" src="stats/104.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_105">
+        <button class="buttonaccueil" onClick="retour('accueil_105','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img id="ossatueur" class="image" src="pokemon_pic/image_105.png">
+        <p>L'os qu'il tient dans sa main est une<br> arme. Il peut le lancer avec adresse<br> pour assomer sa proie.</p>
+        <img class="stats" src="stats/105.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_106">
+        <button class="buttonaccueil" onClick="retour('accueil_106','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_combat.png">
+        <img class="image" src="pokemon_pic/image_106.png">
+        <p>S'il est pressé, ses jambes<br> s'allongent progressivement. Il<br> court alors très rapidement.</p>
+        <img class="stats" src="stats/106.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_107">
+        <button class="buttonaccueil" onClick="retour('accueil_107','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_combat.png">
+        <img id="tygnon" class="image" src="pokemon_pic/image_107.png">
+        <p>Il distribue des séries de coups de<br> poing rapides comme l'éclair,<br> invisibles à l'oeil nu.</p>
+        <img class="stats" src="stats/107.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_108">
+        <button class="buttonaccueil" onClick="retour('accueil_108','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_108.png">
+        <p>Il peut projeter avec sa langue<br> comme un caméléon. Tout contact<br> avec elle provoque une irritation.</p>
+        <img class="stats" src="stats/108.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_109">
+        <button class="buttonaccueil" onClick="retour('accueil_109','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_109.png">
+        <p>Son corps, constitué de gaz<br> toxiques et instables, peut exploser<br> soudainement.</p>
+        <img class="stats" src="stats/109.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_110">
+        <button class="buttonaccueil" onClick="retour('accueil_110','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_poison.png">
+        <img class="image" src="pokemon_pic/image_110.png">
+        <p>Deux SMOGO peuvent combiner<br> en un SMOGOGO en mélangeant<br> leurs gaz.</p>
+        <img class="stats" src="stats/110.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_111">
+        <button class="buttonaccueil" onClick="retour('accueil_111','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img class="type2" src="type/type_roche.png">
+        <img class="image" src="pokemon_pic/image_111.png">
+        <p>Avec une ossature 1000 fois plus<br> résistante que celle de l'homme,<br> ses charges sont dévastatrices.</p>
+        <img class="stats" src="stats/111.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_112">
+        <button class="buttonaccueil" onClick="retour('accueil_112','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_sol.png">
+        <img class="type2" src="type/type_roche.png">
+        <img class="image" src="pokemon_pic/image_112.png">
+        <p>Son épiderme très épais lui permet<br> de survivre dans un environnement<br> de plus de 2000 degrès.</p>
+        <img class="stats" src="stats/112.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_113">
+        <button class="buttonaccueil" onClick="retour('accueil_113','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_113.png">
+        <p>Un POKEMON rare et difficile à<br> capturer qui porte chance et<br> bien-être à son possesseur.</p>
+        <img class="stats" src="stats/113.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_114">
+        <button class="buttonaccueil" onClick="retour('accueil_114','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_plante.png">
+        <img class="image" src="pokemon_pic/image_114.png">
+        <p>Son corps est recouvert de lianes<br> similaires à des algues. Elles<br> bougent quand il marche.</p>
+        <img class="stats" src="stats/114.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_115">
+        <button class="buttonaccueil" onClick="retour('accueil_115','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_115.png">
+        <p>Son enfant ne quitte la poche<br> ventrale protectrice qu'à l'Age<br> de 3 ans.</p>
+        <img class="stats" src="stats/115.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_116">
+        <button class="buttonaccueil" onClick="retour('accueil_116','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img id="hypotrempe" class="image" src="pokemon_pic/image_116.png">
+        <p>Réputé pour tirer avec précision un<br> jet d'encre sur des insectes volants<br> depuis la surface de l'eau.</p>
+        <img class="stats" src="stats/116.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_117">
+        <button class="buttonaccueil" onClick="retour('accueil_117','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_117.png">
+        <p>Il peut nager à l'envers en agitant<br> ses petits nageoires pectorales.</p>
+        <img class="stats" src="stats/117.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_118">
+        <button class="buttonaccueil" onClick="retour('accueil_118','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_118.png">
+        <p>Sa queue ondule gracieusement<br> comme un voile. On l'appelle :<br> Reine des Océans.</p>
+        <img class="stats" src="stats/118.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_119">
+        <button class="buttonaccueil" onClick="retour('accueil_119','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_119.png">
+        <p>Pendant la saison des amours, on<br> peut le voir nager dans les rivières<br> et les lacs.</p>
+        <img class="stats" src="stats/119.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_120">
+        <button class="buttonaccueil" onClick="retour('accueil_120','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img id="stary" class="image" src="pokemon_pic/image_120.png">
+        <p>Un POKEMON bien curieux qui<br> peut régénérer ses appendices<br> sectionnés lors d'un combat.</p>
+        <img class="stats" src="stats/120.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_121">
+        <button class="buttonaccueil" onClick="retour('accueil_121','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_121.png">
+        <p>Son coeur brille des couleurs de<br> l'arc-en-ciel. On raconte que c'est<br> une pierre précieuse.</p>
+        <img class="stats" src="stats/121.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_122">
+        <button class="buttonaccueil" onClick="retour('accueil_122','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_122.png">
+        <p>Dérangez-le pendant qu'il mime et<br> il se battra en distribuant des volées<br> de claques.</p>
+        <img class="stats" src="stats/122.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_123">
+        <button class="buttonaccueil" onClick="retour('accueil_123','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="insecateur" class="image" src="pokemon_pic/image_123.png">
+        <p>Rapide et agile comme un ninja, il<br> se déplace si vite qu'il crée l'illusion<br> d'être en groupe.</p>
+        <img class="stats" src="stats/123.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_124">
+        <button class="buttonaccueil" onClick="retour('accueil_124','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_glace.png">
+        <img class="type2" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_124.png">
+        <p>Il ondule ses hanches en marchant<br> en entraine les gens dans des danses<br> frénétiques.</p>
+        <img class="stats" src="stats/124.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_125">
+        <button class="buttonaccueil" onClick="retour('accueil_125','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="image" src="pokemon_pic/image_125.png">
+        <p>Vivant dans les centrales, il<br> provoque des pannes de courant<br> en s'aventurant en ville.</p>
+        <img class="stats" src="stats/125.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_126">
+        <button class="buttonaccueil" onClick="retour('accueil_126','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img class="image" src="pokemon_pic/image_126.png">
+        <p>Son corps en fusion brûle d'une<br> flamme orangée, le rendant<br> invisible dans le feu.</p>
+        <img class="stats" src="stats/126.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_127">
+        <button class="buttonaccueil" onClick="retour('accueil_127','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_insecte.png">
+        <img id="scarabrute" class="image" src="pokemon_pic/image_127.png">
+        <p>Quand il ne peut écraser sa proie<br> avec sa pince, il la secoue et<br> l'envoie dans les airs.</p>
+        <img class="stats" src="stats/127.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_128">
+        <button class="buttonaccueil" onClick="retour('accueil_128','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_128.png">
+        <p>Une fois sa cible en vue, il la<br> charge furieusement en fouettant<br> l'air de sa queue.</p>
+        <img class="stats" src="stats/128.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_129">
+        <button class="buttonaccueil" onClick="retour('accueil_129','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img id="magicarpe" class="image" src="pokemon_pic/image_129.png">
+        <p>Autrefois, il était beaucoup plus<br> puissant que cette créature<br> minablement faible.</p>
+        <img class="stats" src="stats/129.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_130">
+        <button class="buttonaccueil" onClick="retour('accueil_130','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="leviator" class="image" src="pokemon_pic/image_130.png">
+        <p>Gigantesque et maléfique, il est<br> capable de raser une ville dans un<br> accès de rage terrifiante.</p>
+        <img class="stats" src="stats/130.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_131">
+        <button class="buttonaccueil" onClick="retour('accueil_131','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img class="type2" src="type/type_glace.png">
+        <img class="image" src="pokemon_pic/image_131.png">
+        <p>Ce POKEMON en voie d'extinction<br> peut transporter des passagers sur<br> son dos par delà  les océans.</p>
+        <img class="stats" src="stats/131.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_132">
+        <button class="buttonaccueil" onClick="retour('accueil_132','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_132.png">
+        <p>Il est capable de copier le code<br> génétique d'un ennemi pour se<br> transformer en son double.</p>
+        <img class="stats" src="stats/132.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_133">
+        <button class="buttonaccueil" onClick="retour('accueil_133','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img id="evoli" class="image" src="pokemon_pic/image_133.png">
+        <p>Sa génétique particulière lui permet<br> d'évoluer s'il est exposé aux<br> radiations d'une pierre.</p>
+        <img class="stats" src="stats/133.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_134">
+        <button class="buttonaccueil" onClick="retour('accueil_134','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_eau.png">
+        <img id="aquali" class="image" src="pokemon_pic/image_134.png">
+        <p>Il vit au bord de l'eau. Sa queue lui<br> donne l'apparence d'une sirène.</p>
+        <img class="stats" src="stats/134.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_135">
+        <button class="buttonaccueil" onClick="retour('accueil_135','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img id="voltali" class="image" src="pokemon_pic/image_135.png">
+        <p>Il se charge d'électricité statique<br> pour envoyer des décharges de<br> 10000 volts.</p>
+        <img class="stats" src="stats/135.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_136">
+        <button class="buttonaccueil" onClick="retour('accueil_136','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img class="image" src="pokemon_pic/image_136.png">
+        <p>Il peut accumuler suffisamment de<br> chaleur pour atteindre une<br> température de 900 degrès.</p>
+        <img class="stats" src="stats/136.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_137">
+        <button class="buttonaccueil" onClick="retour('accueil_137','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img id="porigon" class="image" src="pokemon_pic/image_137.png">
+        <p>Un POKEMON fait de programmes<br> et d'algorithmes. Il peut survivre en<br> milieu virtuel.</p>
+        <img class="stats" src="stats/137.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_138">
+        <button class="buttonaccueil" onClick="retour('accueil_138','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_eau.png">
+        <img id="amonita" class="image" src="pokemon_pic/image_138.png">
+        <p>Disparu depuis longtemps, il peut<br> être réanimé génétiquement à partir<br> d'anciens fossiles.</p>
+        <img class="stats" src="stats/138.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_139">
+        <button class="buttonaccueil" onClick="retour('accueil_139','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_eau.png">
+        <img class="image" src="pokemon_pic/image_139.png">
+        <p>Un POKEMON préhistorique qui<br> disparut quand sa coquille devint<br> trop lourde à déplacer.</p>
+        <img class="stats" src="stats/139.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_140">
+        <button class="buttonaccueil" onClick="retour('accueil_140','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_eau.png">
+        <img id="kabuto" class="image" src="pokemon_pic/image_140.png">
+        <p>Un POKEMON reconstitué à  partir<br> d'un fossile trouvé dans un site<br> préhistorique.</p>
+        <img class="stats" src="stats/140.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_141">
+        <button class="buttonaccueil" onClick="retour('accueil_141','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_eau.png">
+        <img id="kabutops" class="image" src="pokemon_pic/image_141.png">
+        <p>Sa forme élancée lui permet de<br> nager rapidement. Il lacère sa proie<br> avant d'en absorber la vie.</p>
+        <img class="stats" src="stats/141.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_142">
+        <button class="buttonaccueil" onClick="retour('accueil_142','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_roche.png">
+        <img class="type2" src="type/type_vol.png">
+        <img class="image" src="pokemon_pic/image_142.png">
+        <p>Un POKEMON préhistorique qui<br> attaque son ennemi à la gorge avec<br> ses crocs acérés.</p>
+        <img class="stats" src="stats/142.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_143">
+        <button class="buttonaccueil" onClick="retour('accueil_143','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_normal.png">
+        <img class="image" src="pokemon_pic/image_143.png">
+        <p>Très paresseux, il ne fait que<br> manger et dormir. Plus il est gros,<br> plus il devient fainéant.</p>
+        <img class="stats" src="stats/143.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_144">
+        <button class="buttonaccueil" onClick="retour('accueil_144','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_glace.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="articodin" class="image" src="pokemon_pic/image_144.png">
+        <p>Le légendaire oiseau des glaces. On<br> dit qu'il apparait aux gens perdus<br> dans les sommets.</p>
+        <img class="stats" src="stats/144.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_145">
+        <button class="buttonaccueil" onClick="retour('accueil_145','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_electrik.png">
+        <img class="type2" src="type/type_vol.png">
+        <img class="image" src="pokemon_pic/image_145.png">
+        <p>L'oiseau légendaire de la foudre. Il<br> surgit hors des nuages en lançant<br> d'énormes éclairs.</p>
+        <img class="stats" src="stats/145.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_146">
+        <button class="buttonaccueil" onClick="retour('accueil_146','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_feu.png">
+        <img class="type2" src="type/type_vol.png">
+        <img class="image" src="pokemon_pic/image_146.png">
+        <p>Le légendaire oiseau du feu. Une<br> pluie de flammes surgit à chaque<br> battement de ses ailes.</p>
+        <img class="stats" src="stats/146.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_147">
+        <button class="buttonaccueil" onClick="retour('accueil_147','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_dragon.png">
+        <img class="image" src="pokemon_pic/image_147.png">
+        <p>Longtemps considéré comme<br> légendaire, une colonie fut<br> découverte dans les océans.</p>
+        <img class="stats" src="stats/147.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_148">
+        <button class="buttonaccueil" onClick="retour('accueil_148','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_dragon.png">
+        <img id="draco" class="image" src="pokemon_pic/image_148.png">
+        <p>Un POKEMON légendaire plein<br> de charme. Il peut contrôler les<br> variations climatiques.</p>
+        <img class="stats" src="stats/148.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_149">
+        <button class="buttonaccueil" onClick="retour('accueil_149','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_dragon.png">
+        <img class="type2" src="type/type_vol.png">
+        <img id="dracolosse" class="image" src="pokemon_pic/image_149.png">
+        <p>Un POKEMON marin<br> extrêmement rare. On dit qu'il<br> est aussi intelligent de l'homme.</p>
+        <img class="stats" src="stats/149.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_150">
+        <button class="buttonaccueil" onClick="retour('accueil_150','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_150.png">
+        <p>Il est le fruit de nombreuses<br> expériences génétiques horribles<br> et malsaines.</p>
+        <img class="stats" src="stats/150.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+    <div style="display:none" id="accueil_151">
+        <button class="buttonaccueil" onClick="retour('accueil_151','tableau')"><span>Retour</span></button>
+        <img class="pokedex" src="decoration/pokedex_1.png">
+        <img class="type" src="type/type_psy.png">
+        <img class="image" src="pokemon_pic/image_151.png">
+        <p>Unique et rare, son existence est<br> remise en cause par les experts.<br> Peu nombreux sont ceux qui l'ont<br> vu.</p>
+        <img class="stats" src="stats/151.png">
+        <img class="fond_ecran" src="decoration/fond_pokedex.jpg">
+    </div>
+
+   <script src="javascripts/content.js">
+   </script>
+
+</body>
+</html>

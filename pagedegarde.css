@@ -1,0 +1,306 @@
+body{
+  background-color: blue;
+  background-image: url("decoration/pokeball_2.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+
+.audioButton {
+  float:right;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  
+}
+
+.audioButton:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.audioButton:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.contenu{
+  display:flex;
+  flex-direction: column;
+}
+
+.styled{
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+  
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+  
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+.Bouton2 {
+  /* Styles actuels */
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.Bouton2:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.Bouton2:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+@media only screen and (min-width:600px){
+  body{
+    background-size: 100%;
+    background-position:50% -50%;
+  }
+
+  .gif1{
+    position: absolute;
+    width:25%;
+    left:70%;
+    bottom:87%;
+  }
+  .gif2{
+    position: absolute;
+    width:35%;
+    left:65%;
+    bottom:30%;
+  }
+  .gif3{
+    position: absolute;
+    width:35%;
+    bottom:30%;
+  }
+
+  .logo{
+    display:block;
+    width:70%;
+    margin-left: 15%;
+    padding-bottom: 40px;
+    position:relative;
+    top:7rem;
+  }
+
+  .styled{
+    margin-left: 35%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    width:30%;
+    height:120px;
+    position:relative;
+    top:10rem;
+  }
+
+  .Bouton2{
+    margin-top: 0.25%;
+    margin-left: 35%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2.5rem;
+    width:30%;
+    height:120px;
+    position:relative;
+    top:10rem;
+  }
+
+  .audioButton{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 2rem;
+    width:20%;
+  }
+  
+}
+
+@media only screen and (min-width:992px){
+  body{
+    background-size: 40%;
+    background-position:50% -15%;
+  }
+
+  .gif1{
+    position: absolute;
+    width:15%;
+    left:82%;
+    bottom:70%;
+  }
+  .gif2{
+    position: absolute;
+    width:15%;
+    left:60%;
+    bottom:40%;
+  }
+  .gif3{
+    position: absolute;
+    width:15%;
+    left:25%;
+    bottom:40%;
+  }
+
+  .logo{
+    display:block;
+    width:40%;
+    margin-left: 30%;
+    padding-bottom: 40px;
+    position:relative;
+    top:0rem;
+  }
+
+  .styled{
+    margin-left: 45%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:10%;
+    height:60px;
+    position:relative;
+    top:0rem;
+  }
+
+  .Bouton2{
+    margin-top: 0.25%;
+    margin-left: 45%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:10%;
+    height:60px;
+    position:relative;
+    top:0rem;
+  }
+
+  .audioButton{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:9%;
+    height:60px;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  body{
+    background-size: 40%;
+    background-position:50% -15%;
+  }
+
+  .gif1{
+    position: absolute;
+    width:15%;
+    left:82%;
+    bottom:70%;
+  }
+  .gif2{
+    position: absolute;
+    width:15%;
+    left:60%;
+    bottom:40%;
+  }
+  .gif3{
+    position: absolute;
+    width:15%;
+    left:25%;
+    bottom:40%;
+  }
+
+  .logo{
+    display:block;
+    width:40%;
+    margin-left: 30%;
+    padding-bottom: 40px;
+    position:relative;
+    top:0rem;
+  }
+
+  .styled{
+    margin-left: 45%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:10%;
+    height:60px;
+    position:relative;
+    top:0rem;
+  }
+
+  .Bouton2{
+    margin-top: 0.25%;
+    margin-left: 45%;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:10%;
+    height:60px;
+    position:relative;
+    top:0rem;
+  }
+
+  .audioButton{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    width:9%;
+    height:60px;
+  }
+}

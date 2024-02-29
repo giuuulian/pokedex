@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; 
+  flex-direction: column; /* Pour empiler les éléments verticalement */
+}
+
+h1 {
+  margin-top: 20px; 
+  position: relative;
+  left:25%;
+}
+
+
+  
+  /* Styles pour le conteneur d'image */
+  .image-container {
+    border: 1px solid #ccc;
+    padding: 100px;
+    overflow: hidden; /* Assure que l'image agrandie reste dans le conteneur */
+    background-color: white;
+  }
+  
+  /* Style de l'image initiale */
+  .image-container img {
+    width: 100%; /* Remplit le conteneur */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    transition: transform 0.1s ease; /* Ajoute une transition fluide */
+  }
+  
+  /* Effet de zoom au survol */
+  .image-container:hover img {
+    transform: scale(1.2); /* Ajuste la mise à l'échelle (changez le facteur pour agrandir davantage si nécessaire) */
+  }
+  
+  /* Styles pour l'image */
+#random-image {
+    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    width: 300px; /* Largeur fixe pour toutes les images */
+    height: 200px; /* Hauteur fixe pour toutes les images */
+    position:relative;
+    left:27%;
+}
+
+
+  
+/* Conteneur de l'input */
+.input-containeur {
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px; /* Largeur totale du conteneur */
+}
+
+/* Style de l'input (ajustez selon vos besoins) */
+input[type="text"] {
+  flex: 1; /* L'input prendra toute la place disponible */
+  padding: 8px;
+  box-sizing: border-box;
+  margin-right: 10px; /* Marge à droite pour séparer l'input du bouton */
+}
+
+#valider {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style pour le bouton */
+.retour {
+  display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor:pointer;
+    margin: 5px;
+    color:white;
+    position: absolute;
+    top:1%;
+    left:89%;
+}
+.retour span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.retour span:after{
+  content:'\00bb';
+  position: absolute;
+  opacity: 0;
+  top:0;
+  right:-20px;
+  transition: 0.5s;
+}
+
+.retour:hover span{
+  padding-right: 25px;
+}
+
+.retour:hover span:after{
+  opacity: 1;
+  right:0;
+}
+
+
+.pikachu{
+  position: fixed;
+  top: 3.8%;
+  left: 65%;
+  width: 10%;
+  height: auto;
+}
+
+.fond1{position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 28%;
+}
+
+.fond2{position: fixed;
+  top: 34%;
+  left: 68%;
+  width: 32%;
+}
+
+.cadre{
+  width: 50%;
+  margin-left:25%;
+  margin-right: 25%;
+  padding: 1rem;
+  height: fit-content;
+  border: 1px solid #147BBF;
+  border-radius: 1rem;
+  background-image:linear-gradient(
+    70deg,rgb(253, 253, 253),rgb(157, 151, 151)
+  );
+  position: relative;
+  height:44em;
+}
+
+p{
+  position:relative;
+  left:47%;
+}
+
+body{
+  background-image: url("pic_jeux/background.png");
+}
+

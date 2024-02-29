@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <meta charset="UTF-8">
+      <title>PokeWeb</title>
+      <link rel="stylesheet" href="jeu.css">
+      <link rel="icon" href="decoration/pokeball_2.png" type="image">
+  </head>
+
+
+  <body>
+    <div class="cadre">
+      <h1>DEVINER LE POKEMON !</h1>
+      <img class="pikachu" src="pic_jeux/pikachu.png" />
+        
+      <p>Score: <span id="score">0</span></p>
+      <div class="image-container">
+        <img id="random-image" src="" alt="Image aléatoire">  
+      </div>
+        
+      <div class="input-containeur">
+        <input type="text" id="input" placeholder="Qui est-ce ?">
+        <button id="valider">Valider</button>        
+      </div>
+    </div>
+    <a href="pagedegarde.html"><button class="retour" style="vertical-align: middle;"><span>Accueil</span></button></a>
+      
+    <script src="javascripts/jeux.js"></script>
+  </body>
+</html>
